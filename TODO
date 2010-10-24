@@ -1,0 +1,7 @@
+cli-google-bash TO DO list
+==========================
+
+- Make better URL encoding for certain characters
+- Retentain quotes if possible to do phrase searches
+- I'm feeling lucky command line switch
+- ...

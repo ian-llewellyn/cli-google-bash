@@ -1,0 +1,28 @@
+CLI Google Bash
+===============
+by Ian Llewellyn
+
+
+What is cli-google-bash?
+------------------------
+
+I wanted an easy way to do searches from the bash command line while
+working on Linux. Usually I would load elinks, then Go to
+www.google.ie, highlight the search box, type what I wanted to find
+and finally hit return. This short bash script skips over a few of
+these steps.
+
+
+How to install
+--------------
+
+It's up to you how you implement it. I just put the google script
+into my ~/bin directory and made sure it was in my $PATH.
+
+
+How to use
+----------
+
+From the command line, I just type:
+$ google what I want to find
+

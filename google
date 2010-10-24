@@ -1,0 +1,24 @@
+#!/bin/bash
+
+browser=elinks
+site=www.google.ie
+
+# Concat all the command line args together into the search string
+for word in $*
+do
+	if [ "$query" ]; then
+		# This is word 2 - word n
+		query="$query%20$word"
+	else
+		# This is the first word
+		query=$word
+	fi
+done
+
+if [ "$query" ]; then
+	# A query string has been constructed
+	$browser $site/search?q=$query
+else
+	# No query string was provided
+	$browser $site
+fi
