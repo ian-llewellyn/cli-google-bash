@@ -1,5 +1,12 @@
 cli-google-bash Change Log
 ==========================
 
+0.2
+Changed %20 to + in query string to be consistent with other browsers
+Ensure all spaces are changed to +
+Replace all double-quotes in query string with %22
+Removed line about phrase searches from TODO - it's already possible,
+just ensure your shell doesn't grab them first.
+
 0.1
 This is the initial release to GitHub.

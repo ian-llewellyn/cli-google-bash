@@ -6,9 +6,11 @@ site=www.google.ie
 # Concat all the command line args together into the search string
 for word in $*
 do
+        word=${word// /+}
+        word=${word//\"/%22}
 	if [ "$query" ]; then
 		# This is word 2 - word n
-		query="$query%20$word"
+		query="$query+$word"
 	else
 		# This is the first word
 		query=$word
